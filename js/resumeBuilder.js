@@ -19,7 +19,7 @@ var education = {
 	"schools": [
 		{
 			"name" : "San Diego State University - Georgia",
-			"city" : "Saint Petersburg, FL",
+			"location" : "Saint Petersburg, FL",
 			"degree" : "BA",
 			"majors" : ["CE"],
 			"dates" : 2019,
@@ -27,7 +27,7 @@ var education = {
 		},
 		{
 			"name": "MIT",
-			"city": "Fort Lauderdale, FL",
+			"location": "Fort Lauderdale, FL",
 			"degree": "Masters",
 			"majors": ["EECS"],
 			"dates": 2021,
@@ -183,7 +183,7 @@ education.display = function (){
 		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 		$(".education-entry:last").append(formattedDates);
 
-		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].city);
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 		$(".education-entry:last").append(formattedLocation);
 
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
